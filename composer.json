@@ -24,36 +24,9 @@
   },
   "require": {
     "php": ">=7.0.0",
-    "ext-json": "*",
-    "composer-plugin-api": "^1.0 || ^2.0"
+    "ext-json": "*"
   },
   "provide": {
     "wordpress/core-implementation": "dev-main"
-  },
-  "autoload": {
-		"psr-0": {
-			"maulik\\Composer\\": "src/"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"Tests\\maulik\\Composer\\": "tests/"
-		}
-	},
-	"extra": {
-		"class": "maulik\\Composer\\WordPressCorePlugin"
-	},
-	"require-dev": {
-		"composer/composer": "^1.0 || ^2.0",
-		"phpunit/phpunit": ">=5.7.27"
-	},
-	"conflict": {
-		"composer/installers": "<1.0.6"
-	},
-	"scripts": {
-		"test:phpunit": "phpunit",
-		"test": [
-			"@test:phpunit"
-		]
-	}
+  }
 }
