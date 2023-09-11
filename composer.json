@@ -25,5 +25,8 @@
   "require": {
     "php": ">=7.0.0",
     "ext-json": "*"
+  },
+  "provide": {
+    "wordpress/core-implementation": "dev-main"
   }
 }
